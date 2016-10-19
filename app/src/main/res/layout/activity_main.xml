@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
+
+        tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl1027.formdaftarles.MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Full Name"
+            android:textColor="@color/dim_foreground_disabled_material_light"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/material_grey_100"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@color/background_floating_material_dark"
+            android:textColorHint="@color/background_floating_material_dark"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/tilJA"
+            android:layout_width="350dp"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="7sp"
+            android:layout_marginTop="3sp"
+            android:background="#DCDCDC" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radioButtonF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/Provinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provinsi" />
+
+        <Spinner
+            android:id="@+id/spinnerProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/material_grey_100"
+            android:entries="@array/provinsi"
+            android:foregroundTint="@color/abc_search_url_text"
+            android:padding="5dp"
+            android:textColor="@color/background_floating_material_dark" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/textViewBeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Programs" />
+
+        <CheckBox
+            android:id="@+id/cgrammar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Grammar" />
+
+        <CheckBox
+            android:id="@+id/cspeaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Speaking" />
+
+        <CheckBox
+            android:id="@+id/cwriting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Writing and Listening" />
+
+        <Button
+            android:id="@+id/buttonOK"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Sent"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+    </LinearLayout>
+</ScrollView>
